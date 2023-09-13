@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+<script>
+    var edad1 = 10;
+    var edad2 = 20;
+    var edad3 = 30;
+    var totalEdades = edad1 + edad2 + edad3;
+    var promedioEdades = totalEdades/3;
+    alert("***Total de edades es " + totalEdades + "***");
+    alert("***La media de las edades es " +  promedioEdades + "***");
+</script>
+
+<script>
+    function saltarlinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        
+    }
+
+    function imprimir(frase){
+
+        document.write(frase);
+        saltarlinea();
+    }
+    function calcularIMC(peso,altura){
+        imc = peso/(altura*altura);
+        return(imc);
+        // IMC = INDICE DE MASA CORPORAL
+    }
+
+    pesoFrank = 58
+    alturaFrank = 1.60
+    //imcFrank = pesoFrank/(alturaFrank*alturaFrank)
+    imcFrank = calcularIMC(pesoFrank,alturaFrank)
+    imprimir("El IMC de Frank es: "+ imcFrank)
+
+    pesoMaria = 50
+    alturaMaria = 1.60
+    //imcMaria = pesoMaria/(alturaMaria*alturaMaria)
+    imcMaria = calcularIMC(pesoMaria,alturaMaria)
+    imprimir("El IMC de Maria es: "+ imcMaria)
+
+
+</script>
+
+<script>
+     function saltarlinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        
+    }
+
+    function imprimir(frase){
+
+        document.write(frase);
+        saltarlinea();
+    }
+    function calcularIMC(peso,altura,nombre){
+        imc = peso/(altura*altura);
+        imprimir("El IMC calculado de " + nombre + " es: " + imc);
+        // IMC = INDICE DE MASA CORPORAL
+    }
+
+    calcularIMC(58,1.60,"Frank");
+    calcularIMC(50,1.60,"Maria");
+    
+</script>
+
+

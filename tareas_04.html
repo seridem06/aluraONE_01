@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA IMC 2</h1>
+ <script>
+     function saltarlinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        
+    }
+
+    function imprimir(frase){
+
+        document.write(frase);
+        saltarlinea();
+    }
+    //EJEMPLO_01==============================
+    //function calcularIMC(peso1,altura1,nombre1,peso2,altura2,nombre2){
+        //imc1 = peso1/(altura1*altura1);
+        //imc2 = peso2/(altura2*altura2);
+        //imprimir("El promedio IMC calculado de " + nombre1 + " y " + nombre2 + " es: " + (imc1+imc2)/2);
+
+        // IMC = INDICE DE MASA CORPORAL
+    
+    //}
+    //EJEMPLO_02==============================
+    //function calcularImc(peso,altura){
+
+        //imc = peso/(altura*altura);
+
+        //return imc;
+    //}
+
+    //var imcfrank = calcularImc(58,1.60);
+    //var imcmaria = calcularImc(50,1.60);
+
+    //imprimir("el promedio del imc calculado de frank y maria es: "+ (imcfrank + imcmaria)/2);
+    //EJEMPLO_03==============================
+    function calcularImc(peso,altura){
+
+        return (peso/(altura*altura));
+
+    }
+
+   
+
+    //imprimir("el promedio del IMC calculado de frank y maria es: " + (calcularImc(58,1.60) + calcularImc(50,1.60))/2);
+   nombre = prompt("informe su nombre")
+   pesoinformado = prompt(nombre + " informe su peso")
+   alturaInformado = prompt(nombre +" informe su altura")
+
+   imcCalculado = calcularImc(pesoinformado, alturaInformado)
+
+   imprimir(nombre +  " su imc calculado es: " + imcCalculado);
+
+</script>
+   
